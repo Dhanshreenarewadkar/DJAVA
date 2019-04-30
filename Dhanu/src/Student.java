@@ -3,7 +3,7 @@ class Student
 	 int rollno;
 	 String name;
 	 float per;
-	 private static int count=0;
+	 static int count=0;
 	 public Student()
 	 {
 		
@@ -14,14 +14,16 @@ class Student
 		this.name=name;
 		this.per=per;
 		count++;
-		System.out.println("Number of objects:"+count);
+		System.out.println("Number of object created:"+count);
+		
 		
 	 }
 	 
 		
 	 public String toString()
 	 {
-		return "rollno="+rollno+ ",name="+name+",per:"+per;
+		return "rollno="+rollno+ ",name="+name+",per:"+per+"\n";
+
 	 }
 	
 	
